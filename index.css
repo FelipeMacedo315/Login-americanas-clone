@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+header {
+  width: 100%;
+  background-color: rgb(248, 0, 50);
+  height: 12vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+header div {
+  margin-left: 9%;
+  color: white;
+  border-top: solid 5px white;
+  border-bottom: solid 5px white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  line-height: 25px;
+}
+#login-title {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10vh;
+  width: 20%;
+  color: #666666;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+#msg-cliente {
+  color: #666666;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 30%;
+  overflow-wrap: break-word;
+  text-align: center;
+  margin-top: 2.5vh;
+  font-size: 16px;
+}
+
+form {
+  margin-top: 5vh;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+label {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #666666;
+}
+input {
+  font-size: 16px;
+  padding: 2% 0%;
+  padding-left: 3%;
+  border-radius: 10px;
+  border: solid 1px gray;
+}
+.icon-input {
+  position: relative;
+  left: 90%;
+  bottom: 40%;
+  object-fit: fill;
+  height: 30px;
+  width: 30px;
+}
+.icon-input:hover {
+  cursor: pointer;
+}
+
+label input:focus {
+  outline-style: none;
+  border: solid 1px rgb(0, 177, 00);
+}
+
+button {
+  background-color: rgb(248, 0, 50);
+  color: white;
+  border-radius: 8px;
+  padding: 12px;
+  font-weight: 700;
+  font-size: 1rem;
+  border: none;
+}
+button:hover {
+  cursor: pointer;
+  background-color: rgb(235, 51, 67);
+}

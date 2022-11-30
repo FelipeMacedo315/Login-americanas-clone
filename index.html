@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Americanas Login</title>
+    <script src="./index.js" defer></script>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1>americanas</h1>
+      </div>
+    </header>
+
+    <section id="login-title">
+      <img src="./assets/images/profile.png" alt="profile-icon" />
+      <h1>Login do cliente</h1>
+    </section>
+
+    <p id="msg-cliente">
+      Veja seus pedidos de forma fácil, compre mais rápido e tenha uma experiência personalizada :)
+    </p>
+
+    <form>
+      <label for="email">
+        E-mail
+        <input name="email" onchange="validateData()" type="email" />
+        <small></small>
+      </label>
+      <label for="password">
+        Senha
+        <input name="password" onchange="validateData()" id="password" type="password" />
+        <small></small>
+        <img
+          onclick="changeVisiblePassword()"
+          class="icon-input"
+          src="./assets/images/icons8-eye-64.png"
+          alt="change-passoword-visible"
+        />
+      </label>
+      <button>Continuar</button>
+    </form>
+  </body>
+</html>
