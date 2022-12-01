@@ -7,9 +7,10 @@ const inputPasswordField = document.getElementById("password");
 function validateData() {
   const email = document.getElementsByName("email")[0].value;
   const password = document.getElementsByName("password")[0].value;
-
   if (email.length === 0) {
     document.getElementsByTagName("small")[0].innerText = "E necessário informar um E-mail";
+  } else if (!email.includes("@") && !email.includes(".com")) {
+    document.getElementsByTagName("small")[0].innerText = "Tecle email valido";
   } else {
     document.getElementsByTagName("small")[0].innerText = "";
   }
