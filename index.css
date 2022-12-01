@@ -45,11 +45,11 @@ header div {
 }
 
 form {
-  margin-top: 5vh;
+  margin-top: 3vh;
   width: 30%;
   display: flex;
   flex-direction: column;
-  gap: 2vh;
+  gap: 1vh;
 }
 
 label {
@@ -71,19 +71,27 @@ label input:focus {
   border: solid 1px rgb(0, 177, 00);
 }
 small {
-  padding: 0.5vh;
   color: red;
   text-align: left;
 }
-.icon-input {
+.icon-input-ok {
   position: relative;
   left: 90%;
-  bottom: 40%;
+  bottom: 7vh;
   object-fit: fill;
   height: 30px;
   width: 30px;
 }
-.icon-input:hover {
+.icon-input-error {
+  position: relative;
+  left: 90%;
+  bottom: 9vh;
+  object-fit: fill;
+  height: 30px;
+  width: 30px;
+}
+.icon-input-ok,
+.icon-input-error:hover {
   cursor: pointer;
 }
 

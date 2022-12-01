@@ -25,24 +25,20 @@
     </p>
 
     <form>
-      <label for="email">
-        E-mail
-        <input name="email" onchange="validateData()" type="email" />
-        <small></small>
-      </label>
+      <label for="email"> E-mail </label>
+      <input name="email" onchange="validateData()" type="email" />
+      <small></small>
 
-      <label for="password">
-        Senha
-        <input name="password" onchange="validateData()" id="password" type="password" />
-        <small></small>
-        <img
-          onclick="changeVisiblePassword()"
-          class="icon-input"
-          src="./assets/images/icons8-eye-64.png"
-          alt="change-passoword-visible"
-        />
-      </label>
-
+      <label for="password"> Senha </label>
+      <input name="password" onchange="validateData()" id="password" type="password" />
+      <small></small>
+      <img
+        id="icon-password"
+        onclick="changeVisiblePassword()"
+        class="icon-input-ok"
+        src="./assets/images/icons8-eye-64.png"
+        alt="change-password-visible"
+      />
       <button>Continuar</button>
     </form>
   </body>

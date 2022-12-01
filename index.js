@@ -1,6 +1,6 @@
 let passwordVisible = false;
 
-const inputPasswordIcon = document.getElementsByClassName("icon-input")[0];
+const inputPasswordIcon = document.getElementById("icon-password");
 
 const inputPasswordField = document.getElementById("password");
 
@@ -10,15 +10,17 @@ function validateData() {
   if (email.length === 0) {
     document.getElementsByTagName("small")[0].innerText = "E necessário informar um E-mail";
   } else if (!email.includes("@") && !email.includes(".com")) {
-    document.getElementsByTagName("small")[0].innerText = "Tecle email valido";
+    document.getElementsByTagName("small")[0].innerText = "informe um email valido";
   } else {
     document.getElementsByTagName("small")[0].innerText = "";
   }
 
   if (password.length === 0) {
     document.getElementsByTagName("small")[1].innerText = "E necessário informar uma senha ";
+    inputPasswordIcon.className = "icon-input-error";
   } else {
     document.getElementsByTagName("small")[1].innerText = "";
+    inputPasswordIcon.className = "icon-input-ok";
   }
 }
 
