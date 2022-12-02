@@ -58,26 +58,34 @@ label {
   padding-top: 2vh;
   padding-bottom: 1vh;
 }
-input {
+.input-ok {
   font-size: 16px;
   padding: 2% 0%;
   padding-left: 3%;
   border-radius: 10px;
   border: solid 1px gray;
 }
+.input-error {
+  font-size: 16px;
+  padding: 2% 0%;
+  padding-left: 3%;
+  border-radius: 10px;
+  border: solid 1px rgb(248, 0, 50);
+}
 
-label input:focus {
+input:focus {
   outline-style: none;
   border: solid 1px rgb(0, 177, 00);
 }
 small {
   color: red;
   text-align: left;
+  padding-top: 1vh;
 }
 .icon-input-ok {
   position: relative;
   left: 90%;
-  bottom: 5vh;
+  bottom: 6vh;
   object-fit: fill;
   height: 30px;
   width: 30px;
@@ -85,7 +93,7 @@ small {
 .icon-input-error {
   position: relative;
   left: 90%;
-  bottom: 7vh;
+  bottom: 8vh;
   object-fit: fill;
   height: 30px;
   width: 30px;
