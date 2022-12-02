@@ -14,32 +14,45 @@
         <h1>americanas</h1>
       </div>
     </header>
+    <main>
+      <section id="login-title">
+        <img src="./assets/images/profile.png" alt="profile-icon" />
+        <h1>Login do cliente</h1>
+      </section>
 
-    <section id="login-title">
-      <img src="./assets/images/profile.png" alt="profile-icon" />
-      <h1>Login do cliente</h1>
-    </section>
+      <p id="msg-cliente">
+        Veja seus pedidos de forma fácil, compre mais rápido e tenha uma experiência personalizada
+        :)
+      </p>
 
-    <p id="msg-cliente">
-      Veja seus pedidos de forma fácil, compre mais rápido e tenha uma experiência personalizada :)
-    </p>
+      <form>
+        <label for="email"> E-mail </label>
+        <input name="email" onchange="validateData()" type="email" />
+        <small></small>
 
-    <form>
-      <label for="email"> E-mail </label>
-      <input name="email" onchange="validateData()" type="email" />
-      <small></small>
+        <label for="password">
+          <p>Senha</p>
+          <p>esqueceu?</p>
+        </label>
+        <input name="password" onchange="validateData()" id="password" type="password" />
+        <small></small>
+        <img
+          id="icon-password"
+          onclick="changeVisiblePassword()"
+          class="icon-input-ok"
+          src="./assets/images/icons8-eye-64.png"
+          alt="change-password-visible"
+        />
+        <button>Continuar</button>
+      </form>
 
-      <label for="password"> Senha </label>
-      <input name="password" onchange="validateData()" id="password" type="password" />
-      <small></small>
-      <img
-        id="icon-password"
-        onclick="changeVisiblePassword()"
-        class="icon-input-ok"
-        src="./assets/images/icons8-eye-64.png"
-        alt="change-password-visible"
-      />
-      <button>Continuar</button>
-    </form>
+      <p id="msg-registered">
+        Não tem cadastro ? <u><a id="link-registered">cadastre-se</a> </u>
+      </p>
+
+      <p id="msg-registered">
+        Ao continuar com o acesso, você concorda com a nossa <u> política de privacidade </u>
+      </p>
+    </main>
   </body>
 </html>
