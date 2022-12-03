@@ -73,9 +73,9 @@
     font-size: 0.9rem;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1044px) {
   main {
-    width: 40%;
+    width: 30%;
   }
   #msg {
     font-size: 0.9rem;
