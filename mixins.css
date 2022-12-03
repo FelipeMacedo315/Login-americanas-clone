@@ -1,0 +1,83 @@
+@media screen and (max-width: 375px) {
+  #login-title {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  main {
+    width: 90%;
+  }
+  #msg {
+    font-size: 0.9rem;
+  }
+  .icon-input-ok {
+    left: 85%;
+    bottom: 7vh;
+  }
+  .icon-input-error {
+    left: 85%;
+    bottom: 9vh;
+  }
+
+  .input-ok,
+  .input-error {
+    padding: 4% 0% 4% 3%;
+  }
+}
+@media screen and (max-width: 425px) and (min-width: 375px) {
+  #login-title {
+    width: 80%;
+  }
+  main {
+    width: 90%;
+  }
+  #msg {
+    font-size: 0.9rem;
+  }
+  .icon-input-ok {
+    left: 85%;
+    bottom: 7vh;
+  }
+  .icon-input-error {
+    left: 85%;
+    bottom: 9.5vh;
+  }
+
+  .input-ok,
+  .input-error {
+    padding: 4% 0% 4% 3%;
+  }
+}
+
+@media screen and (min-width: 425px) and (max-width: 768px) {
+  main {
+    width: 90%;
+  }
+  #login-title {
+    width: 70%;
+  }
+  .icon-input-ok {
+    left: 87%;
+    bottom: 6vh;
+  }
+  .icon-input-error {
+    left: 87%;
+    bottom: 9vh;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    width: 50%;
+  }
+  #msg {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main {
+    width: 40%;
+  }
+  #msg {
+    font-size: 0.9rem;
+  }
+}

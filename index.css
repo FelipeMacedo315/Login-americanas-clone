@@ -25,6 +25,15 @@ header div {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   line-height: 25px;
 }
+main {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+
 #login-title {
   display: flex;
   justify-content: space-around;
@@ -34,13 +43,13 @@ header div {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
 }
-#msg-cliente {
+#msg {
   color: #666666;
   font-family: Arial, Helvetica, sans-serif;
   overflow-wrap: break-word;
   text-align: center;
   margin-top: 2.5vh;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 form {
@@ -59,14 +68,15 @@ label {
   padding-bottom: 1vh;
 }
 .input-ok {
-  font-size: 16px;
+  background-position: right;
+  font-size: 1rem;
   padding: 2% 0%;
   padding-left: 3%;
   border-radius: 10px;
   border: solid 1px gray;
 }
 .input-error {
-  font-size: 16px;
+  font-size: 1rem;
   padding: 2% 0%;
   padding-left: 3%;
   border-radius: 10px;
@@ -117,19 +127,6 @@ button:hover {
   background-color: rgb(235, 51, 67);
 }
 
-#msg-registered {
-  color: rgb(102, 102, 102);
-  padding-top: 24px;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-}
 #link-registered {
   cursor: pointer;
-}
-main {
-  width: 30%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }

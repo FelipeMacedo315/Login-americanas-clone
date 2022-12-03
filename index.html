@@ -7,6 +7,7 @@
     <title>Americanas Login</title>
     <script src="./index.js" defer></script>
     <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./mixins.css" />
   </head>
   <body>
     <header>
@@ -20,13 +21,13 @@
         <h1>Login do cliente</h1>
       </section>
 
-      <p id="msg-cliente">
+      <p id="msg">
         Veja seus pedidos de forma fácil, compre mais rápido e tenha uma experiência personalizada
         :)
       </p>
 
       <form>
-        <label for="email"> E-mail </label>
+        <label for="email"> <p>E-mail</p> </label>
         <input class="input-ok" name="email" onchange="validateData()" type="email" />
         <small></small>
 
@@ -52,11 +53,11 @@
         <button>Continuar</button>
       </form>
 
-      <p id="msg-registered">
+      <p id="msg">
         Não tem cadastro ? <u><a id="link-registered">cadastre-se</a> </u>
       </p>
 
-      <p id="msg-registered">
+      <p id="msg">
         Ao continuar com o acesso, você concorda com a nossa <u> política de privacidade </u>
       </p>
     </main>
