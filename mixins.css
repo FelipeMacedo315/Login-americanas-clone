@@ -23,6 +23,7 @@
     padding: 4% 0% 4% 3%;
   }
 }
+
 @media screen and (max-width: 425px) and (min-width: 375px) {
   #login-title {
     width: 80%;
@@ -49,6 +50,9 @@
 }
 
 @media screen and (min-width: 425px) and (max-width: 768px) {
+  p {
+    color: blue;
+  }
   main {
     width: 90%;
   }
@@ -57,15 +61,18 @@
   }
   .icon-input-ok {
     left: 87%;
-    bottom: 6vh;
+    bottom: 8vh;
   }
   .icon-input-error {
     left: 87%;
-    bottom: 9vh;
+    bottom: 11vh;
   }
 }
 
 @media screen and (min-width: 768px) {
+  p {
+    color: red;
+  }
   main {
     width: 50%;
   }
@@ -74,10 +81,56 @@
   }
 }
 @media screen and (min-width: 1044px) {
+  p {
+    color: greenyellow;
+  }
   main {
     width: 30%;
   }
   #msg {
     font-size: 0.9rem;
+  }
+}
+
+@media screen and (orientation: landscape) and (max-width: 768px) {
+  main {
+    width: 60%;
+  }
+
+  #login-title {
+    width: 80%;
+  }
+  .icon-input-ok {
+    bottom: 11vh;
+  }
+  .icon-input-error {
+    bottom: 16vh;
+  }
+}
+
+@media screen and (orientation: landscape) and (min-width: 768px) and (max-width: 1024px) {
+  main {
+    width: 40%;
+  }
+  #login-title {
+    width: 80%;
+  }
+  .icon-input-ok {
+    bottom: 11vh;
+  }
+  .icon-input-error {
+    bottom: 16vh;
+  }
+}
+
+@media screen and (orientation: landscape) and (min-width: 1024px) and (max-width: 1440px) {
+  #login-title {
+    width: 80%;
+  }
+  .icon-input-ok {
+    bottom: 11vh;
+  }
+  .icon-input-error {
+    bottom: 16vh;
   }
 }
